@@ -1,0 +1,325 @@
+body{
+    margin: 0px;
+}
+
+/* Header styles */
+header {
+    background-color: #07316f;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo1{
+    width: 250px;
+}
+
+.webimg{
+	width: 100px;
+}
+
+.dropDownMenu{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 190px;
+    margin-right: 155px;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+    
+}
+
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #07316f;
+    color: #fff;
+    border: 1.5px solid #f0f3fa;
+    cursor: pointer;
+    margin-left: 70px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #628ecb;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #f0f3fa;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #b1c9ef;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #07316f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+
+/* Add your CSS styles here */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    color: #000000;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid rgba(225, 225, 225, 5);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #07316f;
+    color: #fff;
+    border-radius: 5px;
+    border: 1.5px solid #f0f3fa;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b1c9ef;
+    color: black;
+    border: 1.5px solid #000000;
+}
+
+.background-image6 {
+    background-image: url('bg6.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    color: #fff; /* Text color */
+}
+
+.background-image1 {
+    background-image: url('bg2.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    height: 750px;
+    position: absolute;
+    width: 100%;
+    color: #fff; /* Text color */
+}
+
+.background-image111 {
+    background-image: url('bg2.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    height: 950px;
+    position: absolute;
+    width: 100%;
+    color: #fff; /* Text color */
+}
+
+.background-image4 {
+    background-image: url('bg4.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.container9 {
+    max-width: 600px;
+    margin-top: 350px;
+    height: 250px;
+    margin: 100px auto;
+    color: #000000;
+    text-align: left;
+    padding: 20px;
+    background-color:transparent;
+    border: 2px solid rgba(0, 0, 0, 5);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+/* Style for social media links */
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 2%; /* Make the logos circular */
+}
+
+@keyframes blink {
+    0% { color: #002aff; } /* starting color */
+    50% { color: #ff0000; } /* halfway - text is invisible */
+    100% { color: #002aff; } /* back to the starting color */
+  }
+  
+  .blinking-text {
+    animation: blink 1s infinite; /* 1s duration for each blink, repeat infinitely */
+  }
+  
+  .container1 {
+    max-width: 100%;
+    text-align: center;
+    margin-top:0px;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    color: #000000;
+    background-color: #8aaee0;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.link {
+    max-width: 800px;
+    margin: 50px auto;
+    width: 35%;
+   
+    text-align: center;
+    padding: 20px;
+    background-color: #a4aef8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.quiz {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.attempt {
+    padding: 20px;
+    color: red;
+    background-color: #dadfff;
+    border-radius: 5px;
+    border: 2px solid rgba(68, 68, 143, 0.623);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+h4{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.containerdash {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    width: 55%;
+    padding: 20px;
+    background-color: #a4aef8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.grid-container {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    
+    background-color: #dadfff;
+    border-radius: 5px;
+    border: 2px solid rgba(68, 68, 143, 0.623);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+}  

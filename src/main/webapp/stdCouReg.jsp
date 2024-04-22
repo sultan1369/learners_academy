@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img class="logo1" src="LA_logo.png" alt="Learners Academy">
+    <div><h4>Student Course Registration</h4></div>
+    <nav>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+</header>
+<div class="background-image4">
+    <div class="container1">
+        <div id="menu1">
+            <nav>
+                <ul>
+                    <li><a href="courses.jsp" onclick="showCourses()">Course Details</a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="avlcourse">
+        <h1>Available Courses</h1>
+        <ul>
+            <li>Web App Development</li>
+            <li>Mobile App Development</li>
+            <li>Data Science</li>
+        </ul>
+        <h2>${student.firstName} ${student.middleName} ${student.lastName}!, Register Here For Course</h2>
+    </div>
+    <div class="container">
+        <h2>Student Course Registration</h2>
+        <form id="registrationForm" action="courseSRegistration" method="post">
+        <label for="studentrId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" value="${student.studentId}" required>
+            <label for="courseId">Course ID:</label>
+            <input type="text" id="courseId" name="courseId" required onchange="updateCourseName()" placeholder="i.e, 1 (or) 2 (or) 3"><br>
+
+            <label for="courseName">Course Name:</label>
+            <select id="courseName" name="courseName" required>
+                <option value="Web App Development">Web App Development</option>
+                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="Data Science">Data Science</option>
+                <!-- Add more courses here -->
+            </select><br>
+
+            <label for="instructorId">Instructor ID:</label>
+            <input type="text" id="instructorId" name="instructorId" required><br>
+
+            <label for="enrollmentDate">Enrollment Date:</label>
+            <input type="date" id="enrollmentDate" name="enrollmentDate" required><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
+<footer>
+    <p>Learners Academy</p>
+</footer>
+
+<script>
+    function updateCourseName() {
+        var courseId = document.getElementById("courseId").value;
+        var courseNameSelect = document.getElementById("courseName");
+        var instructorIdInput = document.getElementById("instructorId");
+        var courseName;
+
+        switch (courseId) {
+            case "1":
+                courseName = "Web App Development";
+                instructorIdInput.value = "1"; // Set instructor ID for course ID 1
+                break;
+            case "2":
+                courseName = "Mobile App Development";
+                instructorIdInput.value = "2"; // Set instructor ID for course ID 2
+                break;
+            case "3":
+                courseName = "Data Science";
+                instructorIdInput.value = "3"; // Set instructor ID for course ID 3
+                break;
+            default:
+                courseName = "";
+                break;
+        }
+
+        // Update the selected option in the course name select element
+        var options = courseNameSelect.options;
+        for (var i = 0; i < options.length; i++) {
+            if (options[i].value === courseName) {
+                courseNameSelect.selectedIndex = i;
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
